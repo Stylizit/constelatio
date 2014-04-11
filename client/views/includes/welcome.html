@@ -1,0 +1,35 @@
+<template name="welcome">
+	<header id="header">
+        {{> navBar}}
+    </header>
+    <div id="main" role="main">
+        {{> searchBar}}
+        <div class="results-bg">
+            <section id="login" class="padding-30">
+            	<div class="wrapper">
+					
+						<h2>Registration Successful</h2>
+						<div class="welcome">
+							<p>
+								Welcome onboard ! We are proud of what you accomplished there. You may be more than a padawan after all.<br>
+								But we will be even prouder if you could take the time to check your email and validate your account.
+							</p>
+							<p>
+								In the meantime, why not :
+							</p>
+							<div class="button-challenge">
+								<a href="{{pathFor 'explore'}}">Explore gallery</a>
+								<a href="{{pathFor 'homepage'}}">Know more </a>
+								<a href="{{pathFor 'userProfile'}}">Publish imagery</a>
+							</div>
+							
+						</div>
+					
+				</div>
+			</section>
+        </div>
+        
+    </div>
+
+	
+</template>

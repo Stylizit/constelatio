@@ -1,0 +1,20 @@
+<template name="resultPage">
+	<header id="header">
+        {{> navBar}}
+    </header>
+    <div id="main" role="main">
+        {{> searchBar}}
+        <div class="results-bg">
+        	<section id="results" class="wrapper padding-30">
+        		<div id="search-results">
+            		{{> resultItem}}
+            	</div>
+            	<div class="button-challenge">
+	                <a href="#" class="">More results</a>
+	            </div>
+            </section>
+        </div>
+        
+    </div>
+	
+</template>

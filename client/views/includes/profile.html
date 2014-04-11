@@ -1,0 +1,50 @@
+<template name="profile">
+	<header id="header">
+        {{> navBar}}
+    </header>
+    <div id="main" role="main">
+        {{> searchBar}}
+        <div class="results-bg">
+        	<section id="profile" class="padding-30">
+        		<div class="wrapper">
+                    <h2>{{username}}'s Profile</h2>
+                    
+                        <p>
+                            Here you can review all your latest submissions and check your personal information.<br>
+                            You can also submit your latest imagery and observations.
+                        </p>
+                        <div class="float-left">
+                            <h3>My latest submissions</h3>
+                           
+                            <p class="more">
+                                <a href="#">View all submissions</a>
+                            </p>
+                        </div>
+                        <div class="float-left">
+                            <h3>My personal information</h3>
+                            <form id="submit-infos">
+                                <p>
+                                    <label for="login-email">E-mail</label><br>
+                                    <input type="email" id="login-email" name="login-email" placeholder="Your e-mail" value="{{email}}" required aria-required="true">                                 
+                                </p>
+                                <p>
+                                    <label for="login-pwd">Password</label><br>
+                                    <input type="password" id="login-pwd" name="login-pwd" placeholder="Your password" required aria-required="true">
+                                    <span class="error-password"></span>
+                                </p>
+                                <input disabled type="submit" name="personal-info-change" id="personal-info-change" value="Change">
+                                <p><a href="#">Forgot password?</a></p>
+                            </form>
+                        </div>
+                        <h3>Submit imagery</h3>
+                        
+                            
+                            {{> imageryDrag}}
+                            
+                       
+                    
+                </div>
+            </section>
+        </div>
+    </div>
+</template>

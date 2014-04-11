@@ -1,0 +1,53 @@
+<template name="login">
+	<header id="header">
+        {{> navBar}}
+    </header>
+    <div id="main" role="main">
+        {{> searchBar}}
+        <div class="results-bg">
+            <section id="login" class="padding-30">
+            	<div class="wrapper">
+					<div class="float-left">
+						<h2>Login</h2>
+						<div class="login-inner-p">
+							<p>
+								Welcome wannabe astronomer!
+								May the force be with you while you fill that login form.
+							</p>
+
+							<form id="login-form">
+								<p>
+									<label for="login-email">E-mail</label><br>
+									<input type="email" id="login-email" name="login-email" placeholder="Your e-mail" required aria-required="true">
+									
+								</p>
+								<p>
+									<label for="login-pwd">Password</label><br>
+									<input type="password" id="login-pwd" name="login-pwd" placeholder="Your password" required aria-required="true">
+									<span class="error-password"></span>
+								</p>
+								<input type="submit" name="login-submit" id="login-submit" value="Submit">
+								<p><a href="#">Forgot password?</a></p>
+							</form>
+						</div>
+					</div>
+					<div class="float-left">
+						<h2>Or try</h2>
+						<div class="social-login">
+							<a href="#" class="facebook-login">Login with Facebook</a>
+							<a href="#" class="twitter-login">Login with Twitter</a>
+							<!--<a href="#" class="googleplus-login">Login with Google Plus</a>-->
+						</div>
+						<h2>Don't have an account?</h2>
+						<div class="button-challenge">
+							<a href="{{pathFor 'register'}}">Register Now !</a>
+						</div>
+					</div>
+				</div>
+			</section>
+        </div>
+        
+    </div>
+
+	
+</template>

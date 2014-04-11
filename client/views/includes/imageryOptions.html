@@ -1,0 +1,83 @@
+<template name="imageryOptions">
+	<div class="float-left">
+    		<div class="float-left">	
+	    		<h4>Object Type</h4>
+	            <ul class="checkbox-list">
+	                <li>                      
+	                    <input type="radio" name="object" id="submit-neo" value="value">
+	                    <label for="submit-neo">NEOs</label>
+	                </li>
+	                <li>
+	                    <input type="radio" name="object" id="submit-1-km-neo" value="value">
+	                    <label for="submit-1-km-neo">1 + KM NEOs</label>
+	                </li>
+	                <li>
+	                    <input type="radio" name="object" id="submit-hazardous" value="value">
+	                    <label for="submit-hazardous">Hazardous</label>
+	                </li>        
+	            </ul> 
+	        </div>
+	        <div class="float-left">
+            <h4>Orbit Type</h4>
+                <ul class="checkbox-list">
+                    <li>
+                        <input type="radio" name="selection" id="submit-inner-solar" class="category" value="value">
+                        <label for="submit-inner-solar">Inner Solar</label>
+
+                        <ul class="checkbox-children">
+                            <li>                      
+                                <input type="radio" name="selection" id="submit-atiras" value="value">
+                                <label for="submit-atiras">Atiras</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="selection" id="submit-atens" value="value">
+                                <label for="submit-atens">Atens</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="selection" id="submit-apollos" value="value">
+                                <label for="submit-apollos">Apollos</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input type="radio" name="selection" id="submit-near-mars" class="category" value="value">
+                        <label for="submit-near-mars">Near Mars Objects</label>
+
+                        <ul class="checkbox-children">
+                            <li>
+                                <input type="radio" name="selection" id="submit-hungarias" value="value">
+                                <label for="submit-hungarias">Hungarias</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="selection" id="submit-mars-crossers" value="value">
+                                <label for="submit-mars-crossers">Mars Crossers</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input type="radio" name="selection" id="outer-solar" class="category" value="value">
+                        <label for="submit-outer-solar">Outer Solar</label>
+
+                        <ul class="checkbox-children">
+                            <li>
+                                <input type="radio" name="selection" id="submit-centaurus" value="value">
+                                <label for="submit-centaurus">Centaurus</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="selection" id="submit-plutinos" value="value">
+                                <label for="submit-plutinos">Plutinos</label>
+                            </li>
+                             <li>
+                                <input type="radio" name="selection" id="submit-classical" value="value">
+                                <label for="submit-classical">Classical TNOs</label>
+                            </li>
+                             <li>
+                                <input type="radio" name="selection" id="submit-other" value="value">
+                                <label for="submit-other">Other TNOs</label>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+    		</div>
+        </div>   
+</template>
